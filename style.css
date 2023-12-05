@@ -16,7 +16,7 @@ html {
 .container {
     padding-left: 30px;
     padding-right: 30px;
-    max-width: 1450px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -44,7 +44,7 @@ header {
 .hero {
     position: relative;
     height: 95vh;
-    background: url("/images/hero2.jpg");
+    background: url("./images/hero2.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
@@ -299,9 +299,9 @@ a {
 
 .custom-shape-divider-top-1701380941 .shape-fill {
     fill: #FFFFFF;
-}
+} */
 
-.custom-shape-divider-bottom-1701381366 {
+/* .custom-shape-divider-bottom-1701381366 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -339,7 +339,7 @@ a {
     height: 50px;
     width: 50px;
     color: #FFFFFF;
-    background: #000;
+    background: #906649;
     font-size: 2.2rem;
     cursor: pointer;
     border-radius: 50%;
@@ -375,9 +375,19 @@ a {
 }
 
 .slider-wrapper .image-list .image-item {
-    width: 465px;
+    width: 400px;
     height: 350px;
     object-fit: cover;
+    margin-bottom: 8px;
+    transition: 0.5s;
+}
+
+.slider-wrapper .image-list .image-link:hover .image-item {
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.slider-wrapper .image-list .image-link {
+    text-transform: uppercase;
 }
 
 .slider-container .slider-scrollbar {
@@ -404,15 +414,15 @@ a {
     position: absolute;
     height: 100%;
     width: 50%;
-    background: #000;
+    background: #906649;
     border-radius: inherit;
     cursor: grab;
 }
 
 .slider-scrollbar .scrollbar-thumb:active {
     cursor: grabbing;
-    height: 8px;
-    top: -2px;
+    height: 6px;
+    top: -1px;
 }
 
 .slider-scrollbar .scrollbar-thumb::after {
