@@ -699,7 +699,7 @@ footer {
     }
 
     .hero-container {
-        padding-top: 200px;
+        padding-top: 215px;
     }
 
     .hero-content {
@@ -758,5 +758,28 @@ footer {
 
     .hero-content h2 {
         font-size: 24px;
+    }
+}
+
+@media (max-height:500px) {
+    .hero-container {
+        padding-top: 125px;
+    }
+
+    .hero-content {
+        gap: 20px;
+    }
+
+    div.hero-content svg {
+        margin-top: 35px;
+    }
+
+    .hero-content h1 {
+        font-size: 76px;
+        letter-spacing: 6px;
+    }
+
+    .hero-content h2 {
+        font-size: 44px;
     }
 }
