@@ -74,3 +74,24 @@ const initSlider = () => {
 };
 
 window.addEventListener("load", initSlider);
+
+//Menu burger
+
+const toggleBtn = document.querySelector(".toggle-btn");
+const toggleBtnIcon = document.querySelector(".toggle-btn span");
+const dropDownMenu = document.querySelector(".dropdown-menu");
+const menuLinks = document.querySelectorAll(".menu-link");
+
+toggleBtn.addEventListener("click", () => {
+  dropDownMenu.classList.toggle("open");
+  const isOpen = dropDownMenu.classList.contains("open");
+
+  toggleBtnIcon.textContent = isOpen ? "close" : "menu";
+});
+
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    dropDownMenu.classList.remove("open");
+    toggleBtnIcon.textContent = "menu";
+  });
+});
