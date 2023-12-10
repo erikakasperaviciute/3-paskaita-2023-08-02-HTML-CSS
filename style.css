@@ -65,16 +65,20 @@ header {
 }
 
 .hero-container {
+    display: flex;
+    height: 95vh;
+    width: 100%;
     color: #ffffff;
     opacity: 0.8;
     filter: brightness(35);
     text-transform: uppercase;
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
-    z-index: 1;
+    align-items: center;
+    /* z-index: 1;
     position: absolute;
-    top: 0;
+    top: 0; */
     /* left: 0; */
-    padding-top: 290px;
+    /* padding-top: 290px; */
 }
 
 .hero-content {
@@ -668,12 +672,12 @@ footer {
 }
 
 @media (max-width:760px) {
-    .hero-container {
+    /* .hero-container {
         display: flex;
         width: 100%;
         justify-content: center;
         left: 0;
-    }
+    } */
 
 
     .hero-content h1 {
@@ -694,12 +698,13 @@ footer {
         font-size: 32px;
     }
 
+    /* 
     .hero {
         height: 75vh;
-    }
+    } */
 
     .hero-container {
-        padding-top: 215px;
+        /* padding-top: 215px; */
     }
 
     .hero-content {
@@ -721,6 +726,18 @@ footer {
 }
 
 @media (max-width: 476px) {
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hero-container {
+
+        justify-content: center;
+
+    }
+
     .about-us img {
         height: 100%;
 
@@ -748,9 +765,9 @@ footer {
 }
 
 @media (max-width: 380px) {
-    .hero {
+    /* .hero {
         height: 65vh;
-    }
+    } */
 
     .hero-content h1 {
         font-size: 42px;
@@ -761,9 +778,29 @@ footer {
     }
 }
 
-@media (max-height:500px) {
+@media (max-width: 290px) {
+
+    .hero-content {
+        gap: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+
+    .hero-content h2 {
+        font-size: 22px;
+    }
+
+    div.hero-content svg {
+        width: 16px;
+    }
+}
+
+@media (max-height:600px) {
     .hero-container {
-        padding-top: 125px;
+        /* padding-top: 125px; */
     }
 
     .hero-content {
@@ -771,7 +808,7 @@ footer {
     }
 
     div.hero-content svg {
-        margin-top: 35px;
+        margin-top: 15px;
     }
 
     .hero-content h1 {
@@ -781,5 +818,59 @@ footer {
 
     .hero-content h2 {
         font-size: 44px;
+    }
+}
+
+@media (max-height:430px) {
+
+
+    .hero-content {
+        gap: 15px;
+    }
+
+    div.hero-content svg {
+        margin-top: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 46px;
+        letter-spacing: 4px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-height:280px) {
+    .logo-img img {
+        width: 50px;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-container {
+        height: 100vh;
+    }
+
+    .hero-content {
+        gap: 8px;
+    }
+
+    div.hero-content svg {
+        width: 16px;
+        margin-top: 8px;
+
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+        letter-spacing: 2px;
+    }
+
+    .hero-content h2 {
+        font-size: 25px;
     }
 }
