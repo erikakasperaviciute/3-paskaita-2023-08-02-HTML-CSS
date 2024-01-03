@@ -15,9 +15,14 @@
         rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&f[]=poppins@500,700&display=swap"
         rel="stylesheet">
+    <link href="/assets/css/jquery.fancybox.min.css" rel="stylesheet">
     <title>Products</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <!-- <script src="fancybox.js" defer></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css" />
+
 </head>
 
 <body>
@@ -72,7 +77,45 @@
             <div class="container">
                 <h2>Džiovinta kalibruota mediena</h2>
                 <div class="row">
-                    <img src="./images/slider-1.jpg" alt="" width="780" height="450">
+                    <div id="app">
+                        <div class="f-carousel" id="myCarousel1">
+                            <div class="f-carousel__slide" data-thumb-src="/images/slider-1.jpg"
+                                data-fancybox="gallery1" data-src="/images/slider-1.jpg">
+                                <img class="gallery-trigger" width="780" height="400" alt=""
+                                    src="/images/slider-1.jpg" />
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/kalibruota-mediena-eurostilius-01-thumbnail.jpg"
+                                data-fancybox="gallery1" data-src="/images/kalibruota-mediena-eurostilius-01.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/kalibruota-mediena-eurostilius-01.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/kalibruota-mediena-eurostilius-02-thumbnail.jpg"
+                                data-fancybox="gallery1" data-src="/images/kalibruota-mediena-eurostilius-02.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/kalibruota-mediena-eurostilius-02.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/kalibruota-mediena-eurostilius-03-thumbnail.jpg"
+                                data-fancybox="gallery1" data-src="/images/kalibruota-mediena-eurostilius-03.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/kalibruota-mediena-eurostilius-03.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/kalibruota-mediena-eurostilius-04-thumbnail.jpg"
+                                data-fancybox="gallery1" data-src="/images/kalibruota-mediena-eurostilius-04.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/kalibruota-mediena-eurostilius-04.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/kalibruota-mediena-eurostilius-05-thumbnail.jpg"
+                                data-fancybox="gallery1" data-src="/images/kalibruota-mediena-eurostilius-05.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/kalibruota-mediena-eurostilius-05.jpg">
+                            </div>
+                        </div>
+                    </div>
                     <div class="description">
                         <p>Džiovinta kalibruota eglės mediena.</p>
                         <table>
@@ -123,12 +166,61 @@
                 <h2>Statybinė mediena</h2>
 
                 <div class="row">
-                    <img src="./images/slider2-bigger.jpg" alt="" width="780" height="450">
+                    <div id="app">
+                        <div class="f-carousel" id="myCarousel">
+                            <div class="f-carousel__slide" data-thumb-src="/images/slider2-bigger.jpg"
+                                data-fancybox="gallery" data-src="/images/slider2-bigger.jpg">
+                                <img class="gallery-trigger" width="780" height="400" alt=""
+                                    src="/images/slider2-bigger.jpg" />
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/statybine-mediena-eurostilius-01-thumbnail.jpg"
+                                data-fancybox="gallery" data-src="/images/statybine-mediena-eurostilius-01.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/statybine-mediena-eurostilius-01.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/statybine-mediena-eurostilius-02-thumbnail.jpg"
+                                data-fancybox="gallery" data-src="/images/statybine-mediena-eurostilius-02.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/statybine-mediena-eurostilius-02.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/statybine-mediena-eurostilius-03-thumbnail.jpg"
+                                data-fancybox="gallery" data-src="/images/statybine-mediena-eurostilius-03.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/statybine-mediena-eurostilius-03.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/statybine-mediena-eurostilius-04-thumbnail.jpg"
+                                data-fancybox="gallery" data-src="/images/statybine-mediena-eurostilius-04.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/statybine-mediena-eurostilius-04.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/statybine-mediena-eurostilius-05-thumbnail.jpg"
+                                data-fancybox="gallery" data-src="/images/statybine-mediena-eurostilius-05.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/statybine-mediena-eurostilius-05.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/statybine-mediena-eurostilius-06-thumbnail.jpg"
+                                data-fancybox="gallery" data-src="/images/statybine-mediena-eurostilius-06.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/statybine-mediena-eurostilius-06.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/statybine-mediena-eurostilius-07-thumbnail.jpg"
+                                data-fancybox="gallery" data-src="/images/statybine-mediena-eurostilius-07.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/statybine-mediena-eurostilius-07.jpg">
+                            </div>
+                        </div>
+                    </div>
                     <div class="description">
                         <p>Visa statybinė mediena yra pjaunama iš lietuviškų rąstų.
                             Laikoma stoginėse su tarpinėmis natūraliam medienos pradžiovinimui.</p>
                         <p> Galimi standartiniai ir nestandartiniai matmenys.</p>
-
                     </div>
                 </div>
             </div>
@@ -137,7 +229,63 @@
             <div class="container">
                 <h2>Apdailinė mediena</h2>
                 <div class="row">
-                    <img src="./images/slider-3.jpg" alt="" width="780" height="450">
+                    <div id="app">
+                        <div class="f-carousel" id="myCarousel2">
+                            <div class="f-carousel__slide" data-thumb-src="/images/slider-3.jpg"
+                                data-fancybox="gallery2" data-src="/images/slider-3.jpg">
+                                <img class="gallery-trigger" width="780" height="400" alt=""
+                                    src="/images/slider-3.jpg" />
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/apdailinė-mediena-eurostilius-01-thumbnail.jpg"
+                                data-fancybox="gallery2" data-src="/images/apdailinė-mediena-eurostilius-01.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/apdailinė-mediena-eurostilius-01.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/apdailinė-mediena-eurostilius-02-thumbnail.jpg"
+                                data-fancybox="gallery2" data-src="/images/apdailinė-mediena-eurostilius-02.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/apdailinė-mediena-eurostilius-02.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/apdailinė-mediena-eurostilius-03-thumbnail.jpg"
+                                data-fancybox="gallery2" data-src="/images/apdailinė-mediena-eurostilius-03.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/apdailinė-mediena-eurostilius-03.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/apdailinė-mediena-eurostilius-04-thumbnail.jpg"
+                                data-fancybox="gallery2" data-src="/images/apdailinė-mediena-eurostilius-04.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/apdailinė-mediena-eurostilius-04.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/apdailinė-mediena-eurostilius-05-thumbnail.jpg"
+                                data-fancybox="gallery2" data-src="/images/apdailinė-mediena-eurostilius-05.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/apdailinė-mediena-eurostilius-05.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/apdailinė-mediena-eurostilius-06-thumbnail.jpg"
+                                data-fancybox="gallery2" data-src="/images/apdailinė-mediena-eurostilius-06.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/apdailinė-mediena-eurostilius-06.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/apdailinė-mediena-eurostilius-07-thumbnail.jpg"
+                                data-fancybox="gallery2" data-src="/images/apdailinė-mediena-eurostilius-07.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/apdailinė-mediena-eurostilius-07.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/apdailinė-mediena-eurostilius-08-thumbnail.jpg"
+                                data-fancybox="gallery2" data-src="/images/apdailinė-mediena-eurostilius-08.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/apdailinė-mediena-eurostilius-08.jpg">
+                            </div>
+                        </div>
+                    </div>
                     <div class="description">
                         <p>Lauko apdailinės lentelės su pusiniu "špuntu". Obliuotos arba šiauštos.</p>
                         <table>
@@ -155,7 +303,40 @@
             <div class="container">
                 <h2>Impregnuota mediena</h2>
                 <div class="row">
-                    <img src="./images/slider5.jpg" alt="" width="780" height="450">
+                    <div id="app">
+                        <div class="f-carousel" id="myCarousel3">
+                            <div class="f-carousel__slide" data-thumb-src="/images/slider5.jpg" data-fancybox="gallery3"
+                                data-src="/images/slider5.jpg">
+                                <img class="gallery-trigger" width="780" height="400" alt=""
+                                    src="/images/slider5.jpg" />
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/impregnuota-mediena-eurostilius-01-thumbnail.jpg"
+                                data-fancybox="gallery3" data-src="/images/impregnuota-mediena-eurostilius-01.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/impregnuota-mediena-eurostilius-01.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/impregnuota-mediena-eurostilius-02-thumbnail.jpg"
+                                data-fancybox="gallery3" data-src="/images/impregnuota-mediena-eurostilius-02.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/impregnuota-mediena-eurostilius-02.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/impregnuota-mediena-eurostilius-03-thumbnail.jpg"
+                                data-fancybox="gallery3" data-src="/images/impregnuota-mediena-eurostilius-03.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/impregnuota-mediena-eurostilius-03.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/impregnuota-mediena-eurostilius-04-thumbnail.jpg"
+                                data-fancybox="gallery3" data-src="/images/impregnuota-mediena-eurostilius-04.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/impregnuota-mediena-eurostilius-04.jpg">
+                            </div>
+
+                        </div>
+                    </div>
                     <div class="description">
                         <p>Impregnuota statybinė mediena, pagaminta iš pušies ir eglės medžio. Mediena yra impregnuota
                             antiseptikais, kad užtikrintų ilgaamžiškumą ir apsaugą nuo vabzdžių, grybelio bei pelėsio.
@@ -169,14 +350,58 @@
             <div class="container">
                 <h2>Terasinės lentos</h2>
                 <div class="row">
-                    <img src="./images/slider-4.jpg" alt="" width="780" height="450">
+                    <div id="app">
+                        <div class="f-carousel" id="myCarousel4">
+                            <div class="f-carousel__slide" data-thumb-src="/images/slider-4.jpg"
+                                data-fancybox="gallery4" data-src="/images/slider-4.jpg">
+                                <img class="gallery-trigger" width="780" height="400" alt=""
+                                    src="/images/slider-4.jpg" />
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/terasos-mediena-eurostilius-01-thumbnail.jpg"
+                                data-fancybox="gallery4" data-src="/images/terasos-mediena-eurostilius-01.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/terasos-mediena-eurostilius-01.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/terasos-mediena-eurostilius-02-thumbnail.jpg"
+                                data-fancybox="gallery4" data-src="/images/terasos-mediena-eurostilius-02.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/terasos-mediena-eurostilius-02.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/terasos-mediena-eurostilius-03-thumbnail.jpg"
+                                data-fancybox="gallery4" data-src="/images/terasos-mediena-eurostilius-03.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/terasos-mediena-eurostilius-03.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/terasos-mediena-eurostilius-04-thumbnail.jpg"
+                                data-fancybox="gallery4" data-src="/images/terasos-mediena-eurostilius-04.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/terasos-mediena-eurostilius-04.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/terasos-mediena-eurostilius-05-thumbnail.jpg"
+                                data-fancybox="gallery4" data-src="/images/terasos-mediena-eurostilius-05.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/terasos-mediena-eurostilius-05.jpg">
+                            </div>
+                            <div class="f-carousel__slide"
+                                data-thumb-src="/images/terasos-mediena-eurostilius-06-thumbnail.jpg"
+                                data-fancybox="gallery4" data-src="/images/terasos-mediena-eurostilius-06.jpg">
+                                <img class="gallery-trigger" width="780" height="400"
+                                    data-lazy-src="/images/terasos-mediena-eurostilius-06.jpg">
+                            </div>
+                        </div>
+                    </div>
                     <div class="description">
                         <p>Pušinės lentos impregnuotos vakuuminiu būdu, kuris užtikrina gerą apsaugą nuo išorės
                             veiksnių. Lentų paviršiaus viena pusė yra švelniai rifliuota, o kita lygi.</p>
                         <table>
                             <tbody>
                                 <tr>
-                                    <td>145mm x 20mm x 6000mm</td>
+                                    <td>120mm x 28mm x 6000mm</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -227,6 +452,53 @@
         <span class="copyright">Visos teisės saugomos 2023 © UAB "Eurostilius"</span>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js"></script>
+    <!-- <script src="fancybox.js"></script> -->
+    <script>
+        const container = document.getElementById("myCarousel");
+        const container1 = document.getElementById("myCarousel1");
+        const container2 = document.getElementById("myCarousel2");
+        const container3 = document.getElementById("myCarousel3");
+        const container4 = document.getElementById("myCarousel4");
+        const options = {
+            Thumbs: {
+                type: "classic",
+            },
+            Dots: false,
+        };
+
+        const fancyboxOptions = {
+            Thumbs: {
+                type: "classic",
+            },
+        };
+
+        new Carousel(container, options, { Thumbs });
+        new Carousel(container1, options, { Thumbs });
+        new Carousel(container2, options, { Thumbs });
+        new Carousel(container3, options, { Thumbs });
+        new Carousel(container4, options, { Thumbs });
+        Fancybox.bind('[data-fancybox="gallery"]', fancyboxOptions, {
+            // Custom Fancybox options
+        });
+        Fancybox.bind('[data-fancybox="gallery1"]', fancyboxOptions, {
+            // Custom Fancybox options
+        });
+        Fancybox.bind('[data-fancybox="gallery2"]', fancyboxOptions, {
+            // Custom Fancybox options
+        });
+        Fancybox.bind('[data-fancybox="gallery3"]', fancyboxOptions, {
+            // Custom Fancybox options
+        });
+        Fancybox.bind('[data-fancybox="gallery4"]', fancyboxOptions, {
+            // Custom Fancybox options
+        });
+    </script>
+
+
 
 </body>
 

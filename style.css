@@ -124,6 +124,21 @@ li a {
     text-transform: uppercase;
 }
 
+td,
+th {
+    font-family: 'Montserrat',
+        sans-serif;
+}
+
+th {
+    padding-bottom: 8px;
+    text-align: left;
+}
+
+th:nth-of-type(n+1) {
+    padding-top: 15px;
+}
+
 .menu-list li {
     list-style: none;
     display: inline-block;
@@ -541,11 +556,19 @@ footer {
 }
 
 /* Products page */
+
+.gallery-trigger:hover {
+    cursor: zoom-in;
+}
+
 .row {
     display: flex;
     gap: 30px;
     align-items: center;
 }
+
+
+
 
 .calibrated-wood .row,
 .finishing-wood .row,
@@ -556,17 +579,52 @@ footer {
 .construction-wood .row,
 .impregnated-wood .row {
     flex-direction: row-reverse;
+
 }
 
+
 .row img {
+    width: 100%;
+    /* object-fit: cover; */
+}
+
+#app {
     width: 50%;
-    object-fit: cover;
+}
+
+.row .description {
+    width: 50%;
 }
 
 .calibrated-wood {
-    padding-top: 50px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.terrace-wood {
+    padding-top: 20px;
     padding-bottom: 70px;
 }
+
+.finishing-wood {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.construction-wood,
+.impregnated-wood {
+    background-color: rgb(252, 250, 249);
+    padding-top: 90px;
+    padding-bottom: 90px;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+
+/* .impregnated-wood {
+    background-color: rgb(252, 250, 249);
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    clip-path: polygon(100% 100%, 0 90%, 0 0, 100% 10%);
+} */
 
 
 
@@ -583,6 +641,8 @@ footer {
         justify-content: center;
     }
 }
+
+
 
 @media (max-width:760px) {
     /* .hero-container {
@@ -603,6 +663,26 @@ footer {
     }
 }
 
+@media (max-width:650px) {
+
+    .calibrated-wood .row,
+    .finishing-wood .row,
+    .terrace-wood .row,
+    .construction-wood .row,
+    .impregnated-wood .row {
+        flex-direction: column-reverse;
+    }
+
+    #app {
+        width: 100%;
+    }
+
+    .row .description {
+        width: 100%;
+    }
+
+}
+
 @media (max-width:530px) {
 
 
@@ -610,7 +690,9 @@ footer {
         font-size: 32px;
     }
 
-    p {
+    p,
+    th,
+    td {
         font-size: 14px;
     }
 
@@ -652,6 +734,14 @@ footer {
         position: relative;
         top: 0;
 
+    }
+
+    #app img {
+        height: 300px;
+    }
+
+    th:nth-of-type(n+1) {
+        padding-top: 8px;
     }
 }
 
