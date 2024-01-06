@@ -174,16 +174,36 @@ th:nth-of-type(n+1) {
     width: 300px;
     height: 0;
     background: rgba(255 255 255 / 0.2);
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
+    /* -webkit-backdrop-filter: blur(15px); */
+    /* backdrop-filter: blur(15px); */
     border-radius: 8px;
     overflow: auto;
     /* z-index: 100; */
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    -webkit-transform: translate3d(0, 0, 1px);
-    transform: translate3d(0, 0, 1px);
-
 }
+
+@supports ((-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))) {
+    .dropdown-menu {
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+    }
+}
+
+@supports not ((-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))) {
+    .dropdown-menu {
+        background-color: rgba(255, 255, 255, 1);
+        /* Solid background as a fallback */
+    }
+
+    .dropdown-menu li a {
+        color: #906649;
+
+        font-weight: 600;
+    }
+}
+
+
+
 
 .dropdown-menu.open {
     height: auto;
@@ -712,8 +732,7 @@ footer {
 
     .hero-content {
         gap: 40px;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+
     }
 
     .hero-content h1 {
