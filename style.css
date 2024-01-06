@@ -55,10 +55,12 @@ header {
 
 .hero.small-hero {
     height: 65vh;
+    height: calc(var(--vh, 1vh) * 65);
 }
 
 .hero.small-hero .hero-container {
     height: 65vh;
+    height: calc(var(--vh, 1vh) * 65);
 }
 
 .hero-image {
@@ -171,12 +173,12 @@ th:nth-of-type(n+1) {
     top: 75px;
     width: 300px;
     height: 0;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255 255 255 / 0.2);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     border-radius: 8px;
     overflow: hidden;
-    z-index: 20;
+    /* z-index: 100; */
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
 }
@@ -196,13 +198,14 @@ th:nth-of-type(n+1) {
 }
 
 .dropdown-menu li a {
-    color: #906649;
-    font-weight: 600;
+    /* color: #906649; */
+    color: white;
+    /* font-weight: 600; */
 }
 
 .dropdown-menu li:hover a {
     text-decoration: underline;
-    color: white;
+    /* color: white; */
 }
 
 @media (max-width: 650px) {
@@ -762,6 +765,7 @@ footer {
     .hero,
     .hero-container {
         height: 75vh;
+        height: calc(var(--vh, 1vh) * 75);
     }
 
 }
