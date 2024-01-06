@@ -182,14 +182,14 @@ th:nth-of-type(n+1) {
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-@supports ((-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))) {
+@supports (backdrop-filter: blur(15px)) {
     .dropdown-menu {
         -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
     }
 }
 
-@supports not ((-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))) {
+@supports not (backdrop-filter: blur(15px)) {
     .dropdown-menu {
         background-color: rgba(255, 255, 255, 1);
         /* Solid background as a fallback */
