@@ -95,3 +95,16 @@ menuLinks.forEach((link) => {
     toggleBtnIcon.textContent = "menu";
   });
 });
+
+// active link
+
+document.addEventListener("DOMContentLoaded", function () {
+  var links = document.querySelectorAll(".menu-list li a");
+  var currentUrl = window.location.href;
+
+  links.forEach(function (link) {
+    if (link.href === currentUrl) {
+      link.classList.add("active");
+    }
+  });
+});
