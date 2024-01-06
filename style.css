@@ -45,7 +45,7 @@ header {
 
 .hero {
     position: relative;
-    height: 95vh;
+    height: 95svh;
     background: url("./images/hero2.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -54,13 +54,13 @@ header {
 }
 
 .hero.small-hero {
-    height: 65vh;
-    height: calc(var(--vh, 1vh) * 65);
+    height: 65svh;
+    /* height: calc(var(--vh, 1vh) * 65); */
 }
 
 .hero.small-hero .hero-container {
-    height: 65vh;
-    height: calc(var(--vh, 1vh) * 65);
+    height: 65svh;
+    /* height: calc(var(--vh, 1vh) * 65); */
 }
 
 .hero-image {
@@ -71,7 +71,7 @@ header {
 
 .hero-container {
     display: flex;
-    height: 95vh;
+    height: 95svh;
     width: 100%;
     color: #ffffff;
     opacity: 0.8;
@@ -768,8 +768,8 @@ footer {
 
     .hero,
     .hero-container {
-        height: 75vh;
-        height: calc(var(--vh, 1vh) * 75);
+        height: 75svh;
+        /* height: calc(var(--vh, 1vh) * 75); */
     }
 
 }
