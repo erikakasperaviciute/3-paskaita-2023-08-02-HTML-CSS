@@ -92,8 +92,7 @@ header {
 
 
 h1 {
-    font-family: 'Clash Display',
-        sans-serif;
+    font-family: 'Clash Display';
     font-weight: 500;
     font-size: calc(2rem + 5vw);
     /* font-size: 92px; */
@@ -124,8 +123,7 @@ h2 {
 li a {
     text-decoration: none;
     color: #ffffff;
-    font-family: 'Montserrat',
-        sans-serif;
+    font-family: 'Montserrat';
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -133,8 +131,7 @@ li a {
 td,
 th,
 h3 {
-    font-family: 'Montserrat',
-        sans-serif;
+    font-family: 'Montserrat';
 }
 
 h3 {
@@ -146,8 +143,7 @@ h3 {
 label,
 input,
 textarea {
-    font-family: 'Montserrat',
-        sans-serif;
+    font-family: 'Montserrat';
     font-size: 16px;
 }
 
@@ -287,8 +283,7 @@ th:nth-of-type(n+1) {
 
 main h2 {
     color: #906649;
-    font-family: 'Clash Display',
-        sans-serif;
+    font-family: 'Clash Display';
     font-weight: 500;
     font-size: 42px;
     text-align: center;
@@ -333,7 +328,7 @@ main {
 
 
 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     margin-bottom: 15px;
     line-height: 1.3;
 }
@@ -355,14 +350,13 @@ p {
 
 
 .learn-more-btn {
-    background-color: transparent;
+    background-color: #906649;
     display: flex;
     gap: 8px;
     align-items: baseline;
     width: fit-content;
-    font-family: 'Clash Display',
-        sans-serif;
-    color: #906649;
+    font-family: 'Clash Display';
+    color: #FFFFFF;
     text-decoration: none;
     text-transform: uppercase;
     padding: 12px;
@@ -371,13 +365,19 @@ p {
 }
 
 .learn-more-btn:hover {
-    background-color: #906649;
-    color: #FFFFFF;
+
+    color: #906649;
+    background-color: transparent;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+}
+
+.learn-more-btn path {
+    fill: #FFFFFF;
 }
 
 .learn-more-btn:hover path {
-    fill: #FFFFFF;
+    fill: #906649;
 }
 
 .transport-wrapper {
@@ -441,8 +441,7 @@ footer {
 
 
 a {
-    font-family: 'Clash Display',
-        sans-serif;
+    font-family: 'Clash Display';
     text-decoration: none;
     color: #906649;
 }
@@ -500,10 +499,13 @@ footer {
     border: none;
     outline: none;
     transform: translateY(-50%);
+    transition: 0.5s;
 }
 
 .slider-wrapper .slide-button:hover {
-    background: #444;
+    background: rgb(247 238 231);
+
+    color: #906649;
 }
 
 .slider-wrapper .slide-button#prev-slide {
@@ -709,6 +711,8 @@ input {
     padding: 8px 15px;
     border: none;
     border-bottom: #906649 solid 1px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
     /* border-radius: 6px; */
 }
 
@@ -719,12 +723,11 @@ textarea {
 
 .send-form-btn {
     font-size: 16px;
-    background-color: transparent;
+    background-color: #906649;
     text-align: center;
     width: 100%;
-    font-family: 'Clash Display',
-        sans-serif;
-    color: #906649;
+    font-family: 'Clash Display';
+    color: #FFFFFF;
     text-transform: uppercase;
     padding: 12px;
     border: 1px solid #906649;
@@ -733,9 +736,10 @@ textarea {
 
 .send-form-btn:hover {
     cursor: pointer;
-    background-color: #906649;
-    color: #FFFFFF;
+    background-color: transparent;
+    color: #906649;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
 }
 
 .contact-info {
@@ -908,7 +912,9 @@ textarea {
 
     }
 
-    #app img {
+
+    #app .f-carousel__viewport,
+    #app .is-selected img {
         height: 300px;
     }
 
